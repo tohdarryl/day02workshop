@@ -20,7 +20,7 @@ public class Main {
         Apple apple = new Apple(); //only Apple and Orange classes can setType
         apple.setType("washington");
 
-        Item orange = new Orange(); //Item is Item Class, orange is Variable; new is 'new'; Orange() is from Orange Class
+        Item orange = new Orange(); //Item is Item Class, orange is Variable; new is 'new'; Orange() is object, from Orange Class
 
         System.out.printf("apple code: %s\n", apple.getCode());
         System.out.printf("orange code: %s\n", orange.getCode());
@@ -28,7 +28,7 @@ public class Main {
         Item item = apple;
         System.out.printf("item code: %s\n", item.getCode());
 
-        Apple washington = (Apple)item; //casting item into apple
+        Apple washington = (Apple)item; //treat item as apple
         System.out.printf("washington code: %s\n", washington.getCode());
 
         System.out.printf("is item an Orange? b%\n", item instanceof Orange);

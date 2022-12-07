@@ -16,5 +16,8 @@ public class Apple extends Item{//inherit Item.java properties
         this.type = type;
     }
 
+
+    
+
     
 }
